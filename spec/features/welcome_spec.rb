@@ -2,8 +2,8 @@ require "rails_helper"
 
 RSpec.describe "Welcome Page" do 
   it "has a root landing page" do 
-    xander = User.create!(name: "Xander Hendry", email: "not_xanders_email@turing.edu")
-    blake = User.create!(name: "Blake S", email: "not_blakes_email@turing.edu")
+    xander = User.create!({name: "Xander Hendry", email: "not_xanders_email@turing.edu"})
+    blake = User.create!({name: "Blake S", email: "not_blakes_email@turing.edu"})
     
     visit root_path
 

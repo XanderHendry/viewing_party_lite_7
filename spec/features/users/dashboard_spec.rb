@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe 'User Dashboard Page' do
   it 'displays a Users dashboard' do
-    kam = User.create!(name: "Kam", email: "doofus23@gmail.com")
+    kam = User.create!({name: "Kam", email: "doofus23@gmail.com"})
 
     visit "/users/#{kam.id}"
     
